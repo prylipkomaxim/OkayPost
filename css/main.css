@@ -559,7 +559,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 50px;
 }
 .benefit__title {
   max-width: 475px;
@@ -634,8 +633,6 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
 }
 .benefit__goods-categories-item:hover {
   background: #F2F6FC;
@@ -975,5 +972,156 @@ main {
   }
   .benefit__slider-example-img-prev, .benefit__slider-example-img-next {
     display: none;
+  }
+}
+.registrationbord {
+  width: 100%;
+  min-height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.registrationbord__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-width: 1920px;
+  padding: 0px 60px;
+}
+.registrationbord__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 480px;
+  background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+  border-radius: 36px;
+  margin: 100px 0px 0px 0px;
+}
+@media (max-width: 1430px) {
+  .registrationbord .registrationbord__block {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .registrationbord .registrationbord__block {
+    margin-top: calc(30px + 70 * ((100vw - 320px) / 1110));
+  }
+}
+.registrationbord__block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+.registrationbord__img {
+  position: relative;
+  width: 100%;
+  max-width: 402px;
+  padding: 0px 0px 30% 0px;
+}
+.registrationbord__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.registrationbord__content {
+  max-width: 770px;
+  margin: 0px 0px 0px 75px;
+}
+.registrationbord__propose {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+.registrationbord__description {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px 0px 30px 0px;
+}
+@media (max-width: 1430px) {
+  .registrationbord .registrationbord__propose {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .registrationbord .registrationbord__propose {
+    font-size: calc(24px + 6 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .registrationbord .registrationbord__propose {
+    line-height: calc(28px + 12 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) {
+  .registrationbord .registrationbord__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .registrationbord .registrationbord__description {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .registrationbord .registrationbord__description {
+    line-height: calc(24px + 6 * ((100vw - 320px) / 1110));
+  }
+}
+.registrationbord__btn {
+  width: 240px;
+  height: 66px;
+}
+
+@media (min-width: 784px) {
+  .registrationbord__block-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 784px) {
+  .registrationbord__container {
+    padding: 0px 15px;
+  }
+  .registrationbord__block-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .registrationbord__content {
+    margin: 0;
+    text-align: center;
+    max-width: 560px;
+  }
+  .registrationbord__btn-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px 0px 30px 0px;
+  }
+  .registrationbord__img {
+    padding: 0px 0px 65% 0px;
   }
 }
