@@ -241,6 +241,56 @@
                     </div>
                 </div>
             </section>
+            <section class="deliverycount">
+                <div class="deliverycount__container container">
+                    <div class="deliverycount__title section-title">OkeyPost удобная и быстрая доставка посылок из Великобритании </div>
+                    <div class="deliverycount__description">Рассчитайте стоимость доставки из Англии к вам домой. Мы получим ваши посылки на складе, при необходимости объединим несколько доставок в одну и отправим их к вам надежно упакованными.</div>
+                    <form class="deliverycount__form" action="#" method="get">
+                        <div class="deliverycount__form-block">
+                            <div class="deliverycount__form-select-block">
+                                <label for="country">Страна:</label>
+                                <div class="deliverycount__form-select deliverycount__form-select_country">
+                                    <select name="country" id="country">
+                                        <option value="russia">Россия</option>
+                                        <option value="ukraine">Украина</option>
+                                        <option value="bel">Белорусь</option>
+                                        <option value="china">Китай</option>
+                                        <option value="argentina">Аргентина</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="deliverycount__form-input-block">
+                                <label for="city">Город:</label>
+                                <div class="deliverycount__form-input deliverycount__form-input_city"><input type="text" placeholder="Москва" name="city" id="city"></div>
+                            </div>
+                            <div class="deliverycount__form-input-block">
+                                <label for="indexofcity">Индекс:</label>
+                                <div class="deliverycount__form-input deliverycount__form-input_index"><input type="text" placeholder="Введите индекс"name="indexofcity" id="indexofcity"></div>
+                            </div>
+                            <div class="deliverycount__form-input-block">
+                                <label for="weight">Вес посылки:</label>
+                                <div class="deliverycount__form-input deliverycount__form-input_weight"><input type="number" placeholder="0,5" name="weight" id="weight"></div>
+                            </div>
+                            <div class="deliverycount__form-select-block">
+                                <label for="services">Дополнительные услуги:</label>
+                                <div class="deliverycount__form-select deliverycount__form-select_services">
+                                    <select name="services" id="services">
+                                        <option value="selected">Выберите услуги</option>
+                                        <option value="delivery">Доставить</option>
+                                        <option value="not-delivery">Не доставить</option>
+                                        <option value="delivery-fast">Доставить быстро</option>
+                                        <option value="delivery-slow">Не доставить медленно</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deliverycount__btn-block">
+                            <button class="deliverycount__btn button">Рассчитать</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </section>
         </main>
     </div>
     <script src="../js/swiper.js"></script>
