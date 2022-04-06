@@ -34,11 +34,27 @@
                     <span>Вход</span>
                 </div>
                 <div class="header__btn-block">
-                    <a href="#" class="header__btn button">Связаться с нами</a>
+                    <a href="#" class="header__btn button" data-name="popup-btn">Связаться с нами</a>
                 </div>
             </div>
             <div class="menu__icon">
                 <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup__body">
+            <div class="popup__window">
+                <div class="popup__close">
+                    <img src="../image/header/popup-close.svg" alt="close">
+                </div>
+                <div class="popup__title">Введите ваш номер телефона</div>
+                <form class="popup__form" action="#" method="get">
+                    <input type="number" name="phone" placeholder="Ваш номер телефона">
+                    <div class="popup__form-btn-block">
+                        <button class="button" type="submit">Заказать звонок</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
