@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 html, body {
-  min-height: 100%;
+  height: 100%;
   font-family: "Gilroy";
 }
 
@@ -117,6 +117,7 @@ body.body-lock-popup {
 }
 
 .wrapper {
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +125,12 @@ body.body-lock-popup {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .container {
@@ -487,12 +494,6 @@ body.body-lock-popup {
     width: 100%;
   }
 }
-main {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1;
-          flex: 0 1;
-}
-
 .deliverybord {
   width: 100%;
   min-height: 680px;
@@ -508,7 +509,7 @@ main {
       -ms-flex: 1 0;
           flex: 1 0;
   max-width: 1920px;
-  padding: 0px 60px;
+  padding: 0px 15px;
 }
 .deliverybord__block {
   display: -webkit-box;
@@ -608,9 +609,6 @@ main {
   }
 }
 @media (max-width: 997px) {
-  .deliverybord__container {
-    padding: 0px 15px;
-  }
   .deliverybord__block-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1073,7 +1071,7 @@ main {
       -ms-flex: 1 0;
           flex: 1 0;
   max-width: 1920px;
-  padding: 0px 60px;
+  padding: 0px 15px;
 }
 .registrationbord__block {
   display: -webkit-box;
@@ -1177,9 +1175,6 @@ main {
   }
 }
 @media (max-width: 784px) {
-  .registrationbord__container {
-    padding: 0px 15px;
-  }
   .registrationbord__block-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1355,19 +1350,19 @@ main {
   height: 26px;
 }
 .deliverycount__form-select_country::before {
-  background: url("../image/deliverycount/deliverycount-country.svg");
+  background: url("../image/index-main/deliverycount/deliverycount-country.svg");
 }
 .deliverycount__form-select_services::before {
-  background: url("../image/deliverycount/deliverycount-services.svg");
+  background: url("../image/index-main/deliverycount/deliverycount-services.svg");
 }
 .deliverycount__form-input_city::before {
-  background: url("../image/deliverycount/deliverycount-city.svg");
+  background: url("../image/index-main/deliverycount/deliverycount-city.svg");
 }
 .deliverycount__form-input_index::before {
-  background: url("../image/deliverycount/deliverycount-index.svg");
+  background: url("../image/index-main/deliverycount/deliverycount-index.svg");
 }
 .deliverycount__form-input_weight::before {
-  background: url("../image/deliverycount/deliverycount-weight.svg");
+  background: url("../image/index-main/deliverycount/deliverycount-weight.svg");
 }
 .deliverycount__btn-block {
   margin: 32px 0px 0px 0px;
@@ -1779,7 +1774,7 @@ main {
       -ms-flex: 1 0;
           flex: 1 0;
   max-width: 1920px;
-  padding: 0px 60px;
+  padding: 0px 15px;
 }
 .virtualtour__block {
   display: -webkit-box;
@@ -1885,9 +1880,6 @@ main {
 @media (max-width: 787px) {
   .virtualtour {
     height: auto;
-  }
-  .virtualtour__container {
-    padding: 0px 15px;
   }
   .virtualtour__block-container {
     -webkit-box-orient: vertical;
@@ -2311,7 +2303,7 @@ main {
       -ms-flex: 1 0;
           flex: 1 0;
   max-width: 1920px;
-  padding: 0px 60px;
+  padding: 0px 15px;
 }
 .subscribe__block {
   min-height: 250px;
@@ -2430,7 +2422,7 @@ main {
   left: 0;
   width: 26px;
   height: 26px;
-  background: url("../image/subscribe/letter.svg");
+  background: url("../image/index-main/subscribe/letter.svg");
 }
 .subscribe__btn-block button {
   width: 240px;
@@ -2438,9 +2430,6 @@ main {
 }
 
 @media (max-width: 784px) {
-  .subscribe__container {
-    padding: 0px 15px;
-  }
   .subscribe__block-container {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -2456,6 +2445,376 @@ main {
     max-width: 300px;
   }
   .subscribe__input-block {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.teachtobuy {
+  width: 100%;
+  min-height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.teachtobuy__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  max-width: 1920px;
+  padding: 0px 15px;
+}
+.teachtobuy__block {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+  border-radius: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.teachtobuy__block-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.teachtobuy__way {
+  font-weight: 300;
+  font-size: 13px;
+  margin: 0px 0px 29px 0px;
+}
+.teachtobuy__way a {
+  color: #fff;
+}
+.teachtobuy__way span {
+  margin: 0px 5px;
+  color: #fff;
+}
+.teachtobuy__title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+}
+.teachtobuy__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  margin: 10px 0px 40px 0px;
+}
+@media (max-width: 1430px) {
+  .teachtobuy .teachtobuy__title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .teachtobuy .teachtobuy__title {
+    font-size: calc(24px + 24 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .teachtobuy .teachtobuy__title {
+    line-height: calc(28px + 32 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) {
+  .teachtobuy .teachtobuy__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .teachtobuy .teachtobuy__subtitle {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .teachtobuy .teachtobuy__subtitle {
+    line-height: calc(24px + 6 * ((100vw - 320px) / 1110));
+  }
+}
+.teachtobuy__btn {
+  width: 260px;
+  height: 66px;
+}
+
+@media (max-width: 784px) {
+  .teachtobuy {
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
+  .teachtobuy__block {
+    padding: 30px 0px;
+  }
+  .teachtobuy__block-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .teachtobuy__title {
+    text-align: center;
+  }
+}
+.howtobuy {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.howtobuy__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.howtobuy__title {
+  margin: 100px 0px 0px 0px;
+}
+.howtobuy__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 36px;
+  color: #1F2428;
+  margin: 9px 0px 50px 0px;
+  max-width: 922px;
+}
+@media (max-width: 1430px) {
+  .howtobuy .howtobuy__title {
+    font-size: 44px;
+    line-height: 50px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__title {
+    font-size: calc(24px + 20 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__title {
+    line-height: calc(28px + 22 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__title {
+    margin-top: calc(30px + 70 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) {
+  .howtobuy .howtobuy__description {
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__description {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__description {
+    line-height: calc(24px + 12 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__description {
+    margin-bottom: calc(30px + 20 * ((100vw - 320px) / 1110));
+  }
+}
+.howtobuy__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 80px 0px;
+}
+@media (max-width: 1430px) {
+  .howtobuy .howtobuy__item {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__item {
+    margin-bottom: calc(30px + 50 * ((100vw - 320px) / 1110));
+  }
+}
+.howtobuy__item-img {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding: 0px 0px 22% 0px;
+}
+.howtobuy__item-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.howtobuy__item-content-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.howtobuy__item-content-step-count {
+  font-weight: 400;
+  font-size: 80px;
+  color: #01CD7D;
+  margin: 0px 31px 0px 0px;
+}
+.howtobuy__item-content-step-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1F2428;
+  max-width: 386px;
+  padding: 0px 0px 0px 33px;
+  position: relative;
+}
+.howtobuy__item-content-step-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  background: #C0C9D7;
+}
+@media (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-step-count {
+    font-size: 80px;
+    margin-right: 31px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-step-count {
+    font-size: calc(60px + 20 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-step-count {
+    margin-right: calc(15px + 16 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-step-title {
+    font-size: 24px;
+    line-height: 36px;
+    padding-left: 33px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-step-title {
+    font-size: calc(20px + 4 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-step-title {
+    line-height: calc(28px + 8 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-step-title {
+    padding-left: calc(15px + 18 * ((100vw - 320px) / 1110));
+  }
+}
+.howtobuy__item-content-info {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 36px;
+  color: #1F2428;
+}
+.howtobuy__item-content-info p {
+  margin: 15px 0px 0px 0px;
+}
+@media (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-info {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-info {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .howtobuy .howtobuy__item-content-info {
+    line-height: calc(24px + 12 * ((100vw - 320px) / 1110));
+  }
+}
+.howtobuy__btn {
+  width: 260px;
+  height: 66px;
+}
+
+@media (min-width: 784px) {
+  .howtobuy__item-content {
+    padding: 0px 0px 0px 70px;
+  }
+  .howtobuy__item-content-step {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .howtobuy__item-content-info {
+    padding: 10px 0px 0px 0px;
+  }
+}
+@media (max-width: 784px) {
+  .howtobuy__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .howtobuy__item-img {
+    padding: 0px 0px 41% 0px;
+  }
+  .howtobuy__item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .howtobuy__item-content-step {
+    margin: 15px 0px;
+  }
+  .howtobuy__item-content-info {
+    text-align: center;
+  }
+  .howtobuy__btn-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0px 0px 30px 0px;
   }
 }
