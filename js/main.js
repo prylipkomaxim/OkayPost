@@ -28,58 +28,6 @@ function closeBurger() {
     menuBodyBg.classList.remove('_active');
     body.classList.remove('body-lock-burger');
 };
-new Swiper('.benefit__goods-categories-container',{
-    navigation:{
-        nextEl: '.benefit__goods-categories-arrow_rigth',
-        prevEl: '.benefit__goods-categories-arrow_left',
-    },
-    loop:true,
-    mousewheel:true,
-    breakpoints: {
-        320:{
-            slidesPerView:1,
-        },
-        420:{
-            slidesPerView:1.5,
-        },
-        525:{
-            slidesPerView:2,
-        },
-        625:{
-            slidesPerView:2.5,
-        },
-        725:{
-            slidesPerView:3,
-        },
-        825:{
-            slidesPerView:3.5,
-        },
-        925:{
-            slidesPerView:4,
-        },
-        1025:{
-            slidesPerView:4.5,
-        },
-        1125:{
-            slidesPerView:5,
-        },
-        1225:{
-            slidesPerView:5.5,
-        },
-        1400:{
-            slidesPerView:6,
-        }
-    }
-})
-
-new Swiper('.benefit__goods-example-container', {
-    slidesPerView:1,
-    navigation:{
-        nextEl: '.benefit__slider-example-arrow_next',
-        prevEl: '.benefit__slider-example-arrow_prev',
-    },
-    speed:1000,
-})
 const titles = document.querySelectorAll('[data-name="spoiler-title"]'); console.log(titles);
 
 for (let i = 0; i < titles.length; i++) {
