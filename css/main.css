@@ -3706,6 +3706,168 @@ main {
     background: transparent;
   }
 }
+.stockservices {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.stockservices__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.stockservices__title {
+  margin: 100px 0px 30px 0px;
+}
+@media (max-width: 1430px) {
+  .stockservices .stockservices__title {
+    font-size: 44px;
+    line-height: 50px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .stockservices .stockservices__title {
+    font-size: calc(24px + 20 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .stockservices .stockservices__title {
+    line-height: calc(28px + 22 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .stockservices .stockservices__title {
+    margin-top: calc(30px + 70 * ((100vw - 320px) / 1110));
+  }
+}
+.stockservices__items_half {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.stockservices__items_full {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin: 20px 0px 0px 0px;
+}
+@media (max-width: 789px) {
+  .stockservices .stockservices__items_half {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.stockservices__item {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+          box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+  border-radius: 16px;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.stockservices__item-name {
+  color: #222222;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+}
+.stockservices__item-name p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 7px 0px 0px 0px;
+}
+.stockservices__item-price {
+  color: #1F2428;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media (min-width: 525px) {
+  .stockservices__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0px 15px 38px;
+  }
+  .stockservices__item-name {
+    width: 100%;
+  }
+  .stockservices__item-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    min-width: 190px;
+    padding: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 10px;
+    position: relative;
+  }
+  .stockservices__item-price::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0;
+    height: 80%;
+    width: 1px;
+    background: #C0C9D7;
+  }
+}
+@media (max-width: 525px) {
+  .stockservices__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    padding: 15px 15px 0px 15px;
+  }
+  .stockservices__item-name {
+    margin: 0px 0px 15px 0px;
+  }
+  .stockservices__item-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 50px;
+    min-width: 190px;
+    position: relative;
+  }
+  .stockservices__item-price::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #C0C9D7;
+  }
+}
 .footer {
   width: 100%;
   min-height: 474px;
