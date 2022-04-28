@@ -4682,24 +4682,24 @@ main {
   margin: 100px 0px 30px 0px;
 }
 @media (max-width: 1430px) {
-  .questions .virtualaddress__title {
+  .questions .questions__title {
     font-size: 44px;
     line-height: 50px;
     margin-top: 100px;
   }
 }
 @media (max-width: 1430px) and (max-width: 1430px) {
-  .questions .virtualaddress__title {
+  .questions .questions__title {
     font-size: calc(24px + 20 * ((100vw - 320px) / 1110));
   }
 }
 @media (max-width: 1430px) and (max-width: 1430px) {
-  .questions .virtualaddress__title {
+  .questions .questions__title {
     line-height: calc(28px + 22 * ((100vw - 320px) / 1110));
   }
 }
 @media (max-width: 1430px) and (max-width: 1430px) {
-  .questions .virtualaddress__title {
+  .questions .questions__title {
     margin-top: calc(30px + 70 * ((100vw - 320px) / 1110));
   }
 }
