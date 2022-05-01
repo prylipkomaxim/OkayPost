@@ -4963,7 +4963,7 @@ main {
   }
   .footer__item-list {
     opacity: 0;
-    height: 0px;
+    max-height: 0px;
     visibility: hidden;
     overflow: hidden;
     -webkit-transition: all 0.8s ease 0s;
@@ -4972,7 +4972,7 @@ main {
   .footer__item-list.spoiler-body {
     opacity: 1;
     visibility: visible;
-    height: 158px;
+    max-height: 158px;
   }
 }
 .askinsocial {
