@@ -388,9 +388,11 @@ main {
 }
 .loginpopup__close {
   position: absolute;
-  top: -40px;
-  right: -40px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.108);
+  border-radius: 50%;
 }
 .loginpopup__title {
   font-weight: 700;
