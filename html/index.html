@@ -29,7 +29,7 @@
                         <li><a href="shops.html">Магазины</a></li>
                     </ul>
                 </nav>
-                <div class="header__enter">
+                <div class="header__enter" data-name="loginpopup-btn">
                     <img src="../image/header/User.svg" alt="urer">
                     <span>Вход</span>
                 </div>
@@ -53,6 +53,49 @@
                     <input type="number" name="phone" placeholder="Ваш номер телефона">
                     <div class="popup__form-btn-block">
                         <button class="button" type="submit">Заказать звонок</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="loginpopup">
+        <div class="loginpopup__body">
+            <div class="loginpopup__window">
+                <div class="loginpopup__close">
+                    <img src="../image/header/loginpopup-close.svg" alt="close">
+                </div>
+                <div class="loginpopup__title">Выполните вход в ваш личный кабинет</div>
+                <form class="loginpopup__form" action="#" method="get">
+                    <div class="loginpopup__form-input">
+                        <label for="phone">Номер телефона:</label>
+                        <input type="number" name="phone" id="phone">
+                    </div>
+                    <div class="loginpopup__form-input">
+                        <label for="email">Ваш email:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="loginpopup__form-input">
+                        <label for="password">Ваш пароль:</label>
+                        <input type="text" name="password" id="password">
+                    </div>
+                    <div class="loginpopup__form-links">
+                        <a href="#">Востановление пароля</a>
+                        <span>или</span>
+                        <a href="#">Быстрая регистрация</a>
+                    </div>
+                    <div class="loginpopup__form-btn-block">
+                        <button class="button">Войти</button>
+                        <div class="loginpopup__form-social-links">
+                            <a href="#">
+                                <img src="../image/header/Google.png" alt="Google">
+                            </a>
+                            <a href="#">
+                                <img src="../image/header/Facebook.png" alt="Facebook">
+                            </a>
+                            <a href="#">
+                                <img src="../image/header/Vkontakte (VK).png" alt="google">
+                            </a>
+                        </div>
                     </div>
                 </form>
             </div>

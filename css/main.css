@@ -329,6 +329,165 @@ main {
   height: 66px;
 }
 
+.loginpopup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.loginpopup.loginpopup-open {
+  opacity: 1;
+  visibility: visible;
+}
+.loginpopup__body {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 35px;
+}
+.loginpopup__window {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 480px;
+          flex: 0 1 480px;
+  min-height: 640px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+          box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+  border-radius: 16px;
+  position: relative;
+  padding: 35px;
+}
+@media (max-width: 1430px) {
+  .loginpopup .loginpopup__window {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .loginpopup .loginpopup__window {
+    padding-right: calc(15px + 20 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .loginpopup .loginpopup__window {
+    padding-left: calc(15px + 20 * ((100vw - 320px) / 1110));
+  }
+}
+.loginpopup__close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
+}
+.loginpopup__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1F2428;
+  margin: 0px 0px 21px 0px;
+}
+@media (max-width: 1430px) {
+  .loginpopup .loginpopup__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .loginpopup .loginpopup__title {
+    font-size: calc(20px + 4 * ((100vw - 320px) / 1110));
+  }
+}
+@media (max-width: 1430px) and (max-width: 1430px) {
+  .loginpopup .loginpopup__title {
+    line-height: calc(24px + 8 * ((100vw - 320px) / 1110));
+  }
+}
+.loginpopup__form {
+  width: 100%;
+}
+.loginpopup__form-input {
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+}
+.loginpopup__form-input input {
+  width: 100%;
+  min-height: 60px;
+  background: #FCFDFF;
+  border: 1px solid #C0C9D7;
+  border-radius: 6px;
+  padding: 0px 0px 0px 15px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.loginpopup__form-input input::-webkit-outer-spin-button,
+.loginpopup__form-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.loginpopup__form-input label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 36px;
+  color: #1F2428;
+  display: inline-block;
+  margin: 0px 0px 6px 0px;
+}
+.loginpopup__form-links {
+  margin: 24px 0px 30px 0px;
+}
+.loginpopup__form-links a,
+.loginpopup__form-links span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.loginpopup__form-links a {
+  color: #01CD7D;
+}
+.loginpopup__form-btn-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.loginpopup__form-btn-block button {
+  width: 200px;
+  height: 60px;
+}
+@media (max-width: 525px) {
+  .loginpopup .loginpopup__form-btn-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .loginpopup .loginpopup__form-btn-block button {
+    margin: 0px 0px 15px 0px;
+  }
+}
+.loginpopup__form-social-links a {
+  margin: 0px 7px 0px 0px;
+}
+.loginpopup__form-social-links a:last-child {
+  margin: 0;
+}
+
 @media (min-width: 784px) {
   .header__logo {
     margin: 0px 10px 0px 0px;

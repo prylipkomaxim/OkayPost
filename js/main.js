@@ -59,3 +59,28 @@ function closePopup() {
     popup.classList.remove('popup-open');
     document.body.classList.remove('body-lock-popup');
 }
+
+const loginPopupBtn = document.querySelector('[data-name="loginpopup-btn"]'); 
+const loginPopup = document.querySelector('.loginpopup'); 
+const loginPopupClose = document.querySelector('.loginpopup__close'); 
+
+if (loginPopupBtn && loginPopup){
+    loginPopupBtn.addEventListener('click', function() {
+        loginPopup.classList.toggle('loginpopup-open');
+        document.body.classList.toggle('body-lock-popup');
+    })
+    loginPopupClose.addEventListener('click', function(e) {
+            closeLoginPopup();
+    })
+    loginPopup.addEventListener('click', function(e) {
+        if (!e.target.closest('.loginpopup__window')) {
+            closeLoginPopup();
+        }
+    })
+}
+
+function closeLoginPopup() {
+    loginPopup.classList.remove('loginpopup-open');
+    document.body.classList.remove('body-lock-popup');
+}
+
